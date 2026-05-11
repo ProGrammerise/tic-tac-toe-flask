@@ -111,6 +111,8 @@ http://127.0.0.1:5000
 
 
 ![Game Screenshot](screenshots/game-ui-1.png)
+![Game Screenshot](screenshots/game-ui-2.png)
+![Game Screenshot](screenshots/game-ui-3.png)
 
 
 ---
