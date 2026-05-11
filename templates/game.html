@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Tic-Tac-Toe</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+{% endblock %}
+
+
+{% block h2 %}
+<table class="table table-striped stats">
+    <tr>
+        <th>X's Score</th>
+        <td><span id="X" class="span-text"> </span></td>
+    </tr>
+    <tr>
+        <th>O's Score</th>
+        <td><span id="O" class="span-text"> </span></td>
+    </tr>
+    <tr>
+        <th>Draw</th>
+        <td><span id="draw" class="span-text"> </span></td>
+    </tr>
+</table>
+<div id="game-data" data-mode="{{ mode }}">
+    {% if mode == "computer" %}
+    Playing with computer
+    {% endif %}</div>
+<h2 id="info"></h2>
+{% endblock %}
+
+{% block body %}
+<div class="main-container">
+    <div id="game-container" class="text-bg-dark">
+        {% for i in range(9) %}
+        <div cellIndex="{{ i }}" class="x-o-box"></div>
+        {% endfor %}
+    </div>
+</div>
+<form action="{{ url_for('go_home') }}" method="POST">
+    <button type="submit" id="quit-game-btn" class="btn btn-danger">Quit Game</button>
+</form>
+{% endblock %}

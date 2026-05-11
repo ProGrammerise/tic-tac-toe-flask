@@ -1,0 +1,74 @@
+.main-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.stats {
+    display: flex;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: var(--div-width);
+    margin: 5px;
+}
+
+.span-text {
+    font-weight: bolder;
+    width: 20px;
+    margin: auto;
+}
+
+#game-container {
+    width: fit-content;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    margin: auto;
+}
+
+.x-o-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 110px;
+    width: 110px;
+    border: 2px solid;
+    border-color: whitesmoke;
+    border-collapse: collapse;
+    font-size: 5rem;
+    font-family: "Cause", cursive;
+    font-weight: bolder;
+}
+
+#quit-game-btn {
+    display: flex;
+    width: 330px;
+    align-self: center;
+    justify-self: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+@media screen and (min-height: 1330px) {
+    .x-o-box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 200px;
+        width: 200px;
+        border: 2px solid;
+        border-color: whitesmoke;
+        border-collapse: collapse;
+        font-size: 5rem;
+        font-family: "Cause", cursive;
+        font-weight: bolder;
+    }
+
+    #quit-game-btn {
+        display: flex;
+        width: 600px;
+        align-self: center;
+        justify-self: center;
+        justify-content: center;
+        margin: 10px;
+    }
+}

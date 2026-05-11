@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Cause:wght@100..900&display=swap');
+
+:root {
+    --div-height: 30vh;
+    --div-width: 30vw;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.heading-area {
+    display: flex;
+    width: 100vw;
+    height: var(--div-height);
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    font-family: "Cause", cursive;
+}
+
+.heading {
+    font-weight: 900;
+    font-size: 3rem;
+    font-style: normal;
+}
+
+#info {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+@media screen and (min-width: 334px) and (max-width: 500px) {
+    table.stats {
+        font-size: 0.9rem;
+        /* shrink text */
+        width: 100vw;
+        /* full width on mobile */
+    }
+
+    table.stats th,
+    table.stats td {
+        padding: 4px;
+        /* tighter spacing */
+        text-align: center;
+    }
+
+    .heading {
+        font-size: 1.5rem;
+    }
+
+    #info {
+        margin-top: 50px;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+}
+
+
+@media screen and (min-height: 1368px) {
+    table.stats {
+        font-size: 2.6rem;
+        /* shrink text */
+        width: 100%;
+        /* full width on mobile */
+    }
+
+    table.stats th,
+    table.stats td {
+        padding: 4px;
+        /* tighter spacing */
+        text-align: center;
+    }
+
+    .heading {
+        font-size: 5rem;
+    }
+
+    #info {
+        font-size: 4rem;
+    }
+
+    #game-data {
+        font-size: 2rem;
+    }
+
+}

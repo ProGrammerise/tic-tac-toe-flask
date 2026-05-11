@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>select-game</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/start-game.css') }}">
+{% endblock %}
+
+{% block body %}
+<div class="bg-container">
+    <div class="content text-bg-light">
+        <h2>Select Opponent</h2>
+        <form action="{{ url_for('start_game') }}" method="POST">
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="player" id="computer" value="computer" checked>
+                <label class="form-check-label" for="computer">
+                    Play With computer
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="player" id="2P" value="2Player">
+                <label class="form-check-label" for="2P">
+                    2 Players
+                </label>
+            </div>
+            <button type="submit" class="btn btn-primary" id="start-game-btn">Start Game</button>
+
+        </form>
+    </div>
+</div>
+{% endblock %}
