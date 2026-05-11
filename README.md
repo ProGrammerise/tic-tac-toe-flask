@@ -42,19 +42,55 @@ git clone https://github.com/ProGrammerise/tic-tac-toe-flask.git
 cd tic-tac-toe-flask
 ```
 
-### 3️⃣ Install Dependencies
+### 3️⃣ Create Virtual Environment
+
+#### Windows
+
+```bash
+python -m venv venv
+```
+
+#### Linux/Mac
+
+```bash
+python3 -m venv venv
+```
+
+---
+
+### 4️⃣ Activate Virtual Environment
+
+#### Windows
+
+```bash
+venv\Scripts\activate
+```
+
+#### Linux/Mac
+
+```bash
+source venv/bin/activate
+```
+
+---
+
+### 5️⃣ Install Dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 4️⃣ Run the Flask Application
+---
+
+### 6️⃣ Run the Flask Application
 
 ```bash
 python app.py
 ```
 
-### 5️⃣ Open in Browser
+---
+
+### 7️⃣ Open in Browser
 
 ```plaintext
 http://127.0.0.1:5000
