@@ -110,7 +110,7 @@ http://127.0.0.1:5000
 ## 📸 Project Preview
 
 ```markdown
-![Game Screenshot](screenshots/game-ui.png)
+![Game Screenshot](screenshots/game-ui-1.png)
 ```
 
 ---
